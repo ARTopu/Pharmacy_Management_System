@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../view/js/payment.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <title>Payment</title>
+</head>
+<body>
+    <section class="card">
+        <div class="card-wrap">
+            <div class="card-content">
+    <h2><u>Payment System:</u></h2>
+    <form action="../controller/paymentAction.php" method="POST" novalidate onsubmit="return isValid(this);">
+        <label for="customerName">Name:</label>
+        <input type="text" name="cname"><br><br>
+        <label for="customerID">Customer ID:</label>
+        <input type="number" name="cID"><br><br>
+        <label for="amountToPay">Amount To Pay:</label>
+        <input type="number" name="amountToPay"><br><br>
+        <input class="button"  type="submit" name="pay" value="Payment">
+    </form>
+    <br>
+    <a href="caDa.php"><input class="button" type="submit" name="back"  value="Back" ></a>
+
+</div>
+</div>
+</section>
+
+</body>
+</html>

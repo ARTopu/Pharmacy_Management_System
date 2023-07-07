@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../view/js/prescription.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <title>Prescription</title>
+</head>
+<body>
+    <section class="card">
+        <div class="card-wrap">
+            <div class="card-content">
+    <h1><u>Prescription</u></h1>
+    
+
+    <form action="../controller/prAction.php" method="POST" novalidate onsubmit="return isValid(this);">
+        <fieldset>
+            <legend> Patient Info :</legend><br>
+        <label for="pName">Patient Name: </label>
+        <input type="text" name="pName"><br><br>
+        <label for="pID">Patient ID: </label>
+        <input type="number" name="pID"><br><br>
+        <label for="age">Age: </label>
+        <input type="number" name="age"><br><br>
+        <label for="phone">Phone Number: </label>
+        <input type="number" name="phone"><br><br>
+        <label for="date">DATE: </label>
+        <input type="date" name="date"><br><br>
+        <label for="address">Address: </label>
+        <input type="text" name="address"><br><br>
+        <label for="mediName">Medicine Name: </label>
+        <input type="text" name="mediName"><br><br>
+        <label for="description"> Description : </label>
+            <br>
+            <textarea id="description" name="description" >
+            </textarea>
+    </fieldset><br>
+    <input class="button" type="submit" name="prAdd" value="ADD">
+    </form><br>
+    <form action="../controller/managePrAction.php" method="post">
+        <input class="button" type="submit" name="manegePr" value="Manage Prescription">
+    </form>
+    <br>
+    <a href="../view/caDa.php"><input class="button" type="submit" name="back"  value="Back" ></a>
+</div>
+</div>
+</section>
+</body>
+</html>
